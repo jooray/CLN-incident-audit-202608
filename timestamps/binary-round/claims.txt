@@ -1,0 +1,12 @@
+claim1: v26.06.7 fixes missing max-fee cap and closing-tx shape validation in mutual close (close_tx_check, calc_max_close_feerate present in lightningd/closingd)
+claim2: v26.06.7 fixes onion blinded-path fee divisor 32-bit overflow (SIGFPE crash) via 64-bit add
+claim3: v26.06.7 adds open_channel2 inflight-open cap ("Too many inflight channel opens (max %u)")
+claim4: v26.06.7 adds 256-deep JSON nesting limit (bounded_datum_len in json_parse_input) - release-only
+claim5: v26.06.7 fixes STFU quiescence hang (stfu_did_timeout) and feerate range bounds - release-only
+claim6: v26.06.7 does NOT fix openingd crash on funding_satoshis > 21M BTC (no max_channel_funding)
+claim7: v26.06.7 does NOT fix marginal_feerate() float overflow (x1.1 double path retained)
+claim8: v26.06.7 does NOT fix log cap_header free()/vasprintf mismatch (logv still vasprintf+free)
+claim9: v26.06.7 does NOT fix configvar_finalize_overrides NULL deref (no null check after opt_find_long)
+claim10: v26.06.7 does NOT fix RBF rebroadcast loop (rebroadcast_txs still keyed on otx->txid)
+claim11: v26.06.7 websocketd source is unchanged (websocket header case-sensitivity bug unfixed)
+claim12: v26.06.7 hsmd bad_req_fmt no longer fatal (master_badmsg removed), tlv_span cursor-NULL check added, dns: hostname validation added

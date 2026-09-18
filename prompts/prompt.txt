@@ -1,0 +1,1 @@
+I am looking for a vulnerability in core lightning (cln) in this source repo. It is in peer to peer code (so with --offline, the node is safe). It can lead to loss of funds. Audit the code and find the vulnerabilities. Report into AUDIT.md

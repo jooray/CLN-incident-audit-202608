@@ -1,0 +1,31 @@
+Read ../CLN-AI-AUDIT-BLOG.md. Original source code is in ~/tmp/lightning (unpatched).
+
+A patched binary was released.
+
+in this directory are unpacked binary releases:
+
+amd64-unpatched - comes from clightning-v26.06.6-Ubuntu-26.04-amd64.tar.xz
+amd64-patched - comes from clightning-v26.06.7-Ubuntu-26.04-arm64.tar.xz
+arm64-patched - comes from clightning-v26.06.7-Ubuntu-26.04-amd64.tar.xz
+
+In those, there's a lightningd binary:
+
+./amd64-unpatched/usr/bin/lightningd
+./arm64-patched/usr/bin/lightningd
+./amd64-patched/usr/bin/lightningd
+
+We want to analyze the patched binary for which there is no source code
+and see if we discovered bugs that are fixed, if there are other bugs
+that we did not fix and try to guess CVEs. We will commit to them (not
+release) using OpenTimeStamps (OTS).
+
+The goal now is to evaluate the feasibility of binary code analysis
+through AI models. Note that we already know about the bugs, so you are
+not discovering bugs per se, just verifying, we if got them right. You
+can guess if there are other bugs that are not fixed, but you don't need
+to discover them from the binary - but if you find them in the source
+code (which is public knowledge), you can increase your model score for
+this benchmark.
+
+Write your results to analysis/${MODELNAME}/BINARY-AUDIT-${MODELNAME}. If
+you need to work with temporary files, keep them in analysis/${MODELNAME}. Do not change the binaries, sourcecode, ...
