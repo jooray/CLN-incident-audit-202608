@@ -2,6 +2,14 @@
 
 *Short version, for reading rather than checking: [Ten AI models vs an embargoed Core Lightning CVE](https://juraj.bednar.io/en/blog-en/2026/09/18/ten-ai-models-vs-embargoed-core-lightning-a-case-study-of-ai-for-auditing/).*
 
+<!-- jooray-links:start -->
+### More from me
+
+**Full project showcase:** [all my projects](https://juraj.bednar.io/showcase/).
+
+I write about building things on [my blog](https://juraj.bednar.io/en/blog-en/). I also wrote a cypherpunk novel, [Tamers of Entropy](https://tamersofentropy.net/), and there is a [trailer](https://tamersofentropy.net/#trailer).
+<!-- jooray-links:end -->
+
 This repository is the full write-up and the material it is graded against: eleven model
 reports on the source, six on the shipped binaries, both prompts, and the OpenTimestamps
 proofs that committed all of it to the Bitcoin blockchain before upstream published the
